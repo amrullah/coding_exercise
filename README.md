@@ -1,16 +1,16 @@
 # Coding Exercise: Invoice Total Calculator
 
 Create a program that
-1. Takes in a list of `InventoryItem`s
-2. Calculates the `subtotal`
+1. Takes in a list of [InventoryItems](entities/inventory_item.py#L5)
+2. Calculates the `subtotal` by adding `InventoryItem.selling_price`
 3. Applies `discount` on the `subtotal`
-4. Calculates and adds the `tax` amount on the `discount applied subtotal`, based on the `country`
+4. Calculates and adds the `tax` amount on the `discount applied subtotal`, based on the [country](constants.py#L9)
    (do this if there's time)
 5. And returns the above amount as `total invoice amount`
 
 #### Discount Rules:
-Discount is to be calculated on subtotal using the `Coupon` object, which will be supplied as an input.
-Discount is of two types, `Flat` and `Percentage`.
+Discount is to be calculated on subtotal using the [Coupon](entities/coupon.py#L7) object, which will be supplied as an input.
+There are two [Discount types](constants.py#L4), `Flat` and `Percentage`.
 * `Flat` means that the mentioned `discount_value` is to be deducted from the subtotal
 * `Percentage` means that the mentioned `discount_value` is the percentage of the subtotal to be deducted
 
@@ -34,3 +34,5 @@ In other Editors, you'll have to run from terminal using
 ```
 python3 -m unittest tests.InvoiceTaxCalculatorTestCase
 ```
+----
+Note: all the required entities like `InventoryItem`, `Coupon` and constants like `DiscountTypes` and `Countries` are already declared. You need not redeclare them.
