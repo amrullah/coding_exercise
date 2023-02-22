@@ -37,4 +37,4 @@ In other Editors, you'll have to run from terminal using
 python3 -m unittest tests.InvoiceTaxCalculatorTestCase
 ```
 ----
-Note: all the required entities like `InventoryItem`, `Coupon` and constants like `DiscountTypes` and `Countries` are already declared. You need not redeclare them.
+**Note:** all the required entities like `InventoryItem`, `Coupon` and constants like `DiscountTypes` and `Countries` are already declared. You need not redeclare them.
