@@ -26,7 +26,7 @@ Taxation rules depend on the `country`, which will be supplied as an input.
 * For Indonesia, the tax rate is flat 5%, regardless of the value of `subtotal after discount`
 
 ### How to proceed
-You'll need `python3.9` or higher for this exercise.
+Clone the repository first. You'll need `python3.9` or higher for this exercise.
 
 In [main.py](main.py) you'll see a class `InvoiceTotalCalculator` containing the method `get_invoice_total()`. Start writing the solution from there.
 
